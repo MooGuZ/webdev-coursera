@@ -1,0 +1,84 @@
+/* Style Sheet for Assignment of Week 2 */
+
+/* default settings */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: Times, serif;
+    font-size: 64px;
+    margin-bottom: 1.3em;
+    font-family: Helvetica;
+}
+
+.row {
+    width: 100%;
+}
+
+.unit {
+    float: left;
+}
+
+.unit > .menu {
+    background-color: gray;
+    border: 2px black solid;
+    margin: 10px 10px 10px 10px;
+}
+
+.menu > .dish {
+    float: right;
+    width: 150px;
+    border: 2px black solid;
+    margin: -2px -2px 5px 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu > .description {
+    clear: both;
+    width: 90%;
+    margin: 16px auto 16px auto;
+    color: white;
+    text-align:  justify;
+    font-family: Helvetica;
+}
+
+#chicken {
+    background-color: pink;
+}
+
+#beef {
+    background-color: red;
+}
+
+#sushi {
+    background-color: yellow;
+}
+
+/* styles for mobile device */
+@media (max-width: 767px) {
+    .col-mobile-12 {
+        width: 100%;
+    }
+}
+
+/* styles for tablet device */
+@media (min-width: 768px) and (max-width:991px) {
+    .col-tablet-6 {
+        width: 50%;
+    }
+
+    .col-tablet-12 {
+        width: 100%;
+    }
+}
+
+/* styles for desktop device */
+@media (min-width: 992px) {
+    .col-desktop-4 {
+        width: 33.33%;
+    }
+}
